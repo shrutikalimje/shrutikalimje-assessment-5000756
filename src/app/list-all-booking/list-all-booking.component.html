@@ -1,0 +1,22 @@
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>date</td>
+        <td>no of tickets</td>
+        <td>amount</td>
+        <td>update</td>
+        <td>delete</td>
+    </tr>
+    <tr class="col-md-12 border" *ngFor="let m of movies let i= index ;">
+        <td>{{i+1}}{{m.id}}</td>
+        <td>{{m.movie_name}}</td>
+        <td>{{m.movie_bookingdate}}</td>
+        <td>{{m.noOftickets}}</td>
+        <td>{{m.noOftickets*50}}</td>
+        <td><button class="btn btn-sm btn-outline-primary mr-2" (click)="editmovie(movies) ">update</button></td>
+        <td><button class="btn btn-sm btn-outline-danger" (click)="deletemovie(movies)">delete</button></td>
+    </tr>
+    
+</table>
