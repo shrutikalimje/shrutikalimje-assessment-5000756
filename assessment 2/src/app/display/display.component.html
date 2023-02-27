@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="cardphn" *ngFor="let p of phone">
+    <div class="text-center my-auto mx-auto card shadow-sm p-4">
+      <br />
+
+      <!-- <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let course of phoneItem$ | async">
+            {{PhoneItem.id}}: <b>{{phoneItem$.name}}</b>
+          </li> -->
+      <!-- </ul> -->
+      <!-- </div> -->
+
+      <section class="cards d-flex justify-content-evenly">
+        <div class="card shadow-sm p-4" style="width: 18rem">
+          <img src="assets/phn1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ p.name }}</h5>
+            <p class="card-text text-center">{{ p.price }}</p>
+            <p class="card-text text-center">{{ p.id }}</p>
+            <a href="Added" class="btn btn-outline-primary text-center">Add</a>
+          </div>
+        </div>
+
+        <!-- <div class="card" style="width: 18rem;">
+          <img src="assets/phn4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">VIVO</h5>
+            <p class="card-text text-center">brand apple</p>
+            <p class="card-text text-center">price:456</p>
+            <a href="#" class="btn btn-outline-primary text-center">ADD</a>
+          </div>
+        </div>
+    
+        <div class="card shadow-sm p-4" style="width: 18rem;">
+          <img src="assets/phn3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">REALME</h5>
+            <p class="card-text text-center">brand apple</p>
+            <p class="card-text text-center">price:456</p>
+            <a href="#" class="btn btn-outline-primary text-center">ADD</a>
+          </div>
+        </div>-->
+      </section>
+      <button class="btn btn-outline-success">Go To Cart</button>
+
+      <br />
+      <button class="btn btn-outline-success">Go To Cart</button>
+      <br />
+      <br />
+    </div>
+  </div>
+</div>
